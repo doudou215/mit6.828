@@ -1,0 +1,3 @@
+这个不用实际执行
+1.当bios刚加载boot loader时，0x100000处的内容为无意义的
+2.当boot loader转换到kernel时，0x100000处的内容为内核的代码

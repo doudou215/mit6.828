@@ -1,0 +1,11 @@
+1. printf.c中的cprinf函数调用vcprintf函数，然后把putch函数作为一个参数传入到printfmt.c中vprintfmt函数，而putch函数会调用kern/console.c的cputchar函数，这个函数是最终调用底层硬件实现打印的函数。
+2. 在vprintfmt中添加如下几行 208行
+   num = getuint(&ap, lflag);
+   base = 8;
+   goto number; 
+3. 在cprintf中，fmt指向"%d %o %d\n"这段字符串常量，ap指向第一个参数.
+   1. 调用顺序  1) vcprintf,两个参数的值如上所示
+		2）va_arg 
+		3) cons_putc
+4. 输出hello world。输出hello毫无悬念，毕竟57616的16进制表示就是e110.
+后边这个有点意思，跟踪到lib/prinfmt.c中发现，当fmt是%s的时候, p = va_arg(ap, char *)，也就是说传入的&i最终被解释成了一个char*的指针，看代码，它会将*p的值传给putch，也就是把0x00646c72的每个字节传入到putch中，高位字节存储在高位地址，也就是会先传入72这个字节，72先转10进制是114,换算ASCII就是r，其他两个字节也是如此。得到ld6. 这题有些意思是说，如果gcc把参数入栈的顺序反过来，也就是先左后右，你如何保证cprintf依旧工作正常。直接反转fmt的内容即可
