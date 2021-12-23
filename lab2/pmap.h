@@ -63,6 +63,7 @@ void	page_decref(struct PageInfo *pp);
 
 void	tlb_invalidate(pde_t *pgdir, void *va);
 
+// pp-pages得到是index，左移PGSHIFT就是乘以4096即放在第几页
 static inline physaddr_t
 page2pa(struct PageInfo *pp)
 {

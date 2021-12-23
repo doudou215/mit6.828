@@ -142,7 +142,6 @@ mem_init(void)
 	kern_pgdir = (pde_t *) boot_alloc(PGSIZE);
 	assert(kern_pgdir);
 	memset(kern_pgdir, 0, PGSIZE);
-
 	//////////////////////////////////////////////////////////////////////
 	// Recursively insert PD in itself as a page table, to form
 	// a virtual page table at virtual address UVPT.
@@ -159,10 +158,11 @@ mem_init(void)
 	// array.  'npages' is the number of physical pages in memory.  Use memset
 	// to initialize all fields of each struct PageInfo to 0.
 	// Your code goes here:
-	// 分配二级页目录
+	// 分配二级页目录(并不是)，8 * 32768 字节大小。分配了npages个PageInfo数据结构，每个数据结构对应一个物理页
 	pages = (struct PageInfo*)boot_alloc(sizeof(struct PageInfo) * npages);
 	assert(pages);
 	memset(pages, 0, sizeof(struct PageInfo) * npages);
+	cprintf("total %d pages\n", npages);
 
 	//////////////////////////////////////////////////////////////////////
 	// Now that we've allocated the initial kernel data structures, we set
@@ -170,13 +170,13 @@ mem_init(void)
 	// memory management will go through the page_* functions. In
 	// particular, we can now map memory using boot_map_region
 	// or page_insert
-	// 初始化二级页目录
+	// 初始化二级页目录(并不是)，将所有物理页，把已经使用过的页的pp_ref设置为1，未使用过的页用page_free_list拉成一个单链表
 	page_init();
 
 	check_page_free_list(1);
 	check_page_alloc();
 	check_page();
-	panic("first part end\n");
+	// panic("first part end\n");
 	//////////////////////////////////////////////////////////////////////
 	// Now we set up virtual memory
 
@@ -187,7 +187,7 @@ mem_init(void)
 	//      (ie. perm = PTE_U | PTE_P)
 	//    - pages itself -- kernel RW, user NONE
 	// Your code goes here:
-
+	boot_map_region(kern_pgdir, UPAGES, ROUNDUP(sizeof(struct PageInfo) * npages, PGSIZE), PADDR(pages), PTE_U | PTE_P);
 	//////////////////////////////////////////////////////////////////////
 	// Use the physical memory that 'bootstack' refers to as the kernel
 	// stack.  The kernel stack grows down from virtual address KSTACKTOP.
@@ -199,7 +199,8 @@ mem_init(void)
 	//       overwrite memory.  Known as a "guard page".
 	//     Permissions: kernel RW, user NONE
 	// Your code goes here:
-
+	
+	boot_map_region(kern_pgdir, KSTACKTOP - KSTKSIZE, KSTKSIZE, PADDR(bootstack), PTE_U | PTE_W);
 	//////////////////////////////////////////////////////////////////////
 	// Map all of physical memory at KERNBASE.
 	// Ie.  the VA range [KERNBASE, 2^32) should map to
@@ -208,7 +209,7 @@ mem_init(void)
 	// we just set up the mapping anyway.
 	// Permissions: kernel RW, user NONE
 	// Your code goes here:
-
+	boot_map_region(kern_pgdir, KERNBASE, ROUNDUP((0xffffffff) - KERNBASE, PGSIZE), 0, PTE_W | PTE_P);
 	// Check that the initial page directory has been set up correctly.
 	check_kern_pgdir();
 
@@ -381,7 +382,7 @@ page_decref(struct PageInfo* pp)
 //
 // Hint 3: look at inc/mmu.h for useful macros that manipulate page
 // table and page directory entries.
-//
+// 虚拟地址到物理地址的转换
 pte_t *
 pgdir_walk(pde_t *pgdir, const void *va, int create)
 {
@@ -428,7 +429,7 @@ boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm
 		// va += i * 4096;
 		void  *addr = (void *)((uint32_t)va + i * 4096);
 		pte_t *pageEntry = pgdir_walk(pgdir, addr, 1);
-		*pageEntry = (uintptr_t)(((uint32_t)pa + i * 4096) << 12);
+		*pageEntry = (uintptr_t)(((uint32_t)pa + i * 4096));
 		*pageEntry |= perm;
 		*pageEntry |= PTE_P;
 	}
@@ -465,7 +466,7 @@ page_insert(pde_t *pgdir, struct PageInfo *pp, void *va, int perm)
 	// Fill this function in
 	pp->pp_ref += 1;
 	pde_t *target = pgdir_walk(pgdir, va, 0);
-	if (*target) {
+	if (target && *target) {
 		page_remove(pgdir, va);
 		tlb_invalidate(pgdir, va);
 	}
