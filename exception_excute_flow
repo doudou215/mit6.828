@@ -1,81 +1,138 @@
-<mxfile host="app.diagrams.net" modified="2022-05-12T03:23:13.831Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="4AjSmUZ_K-ZQAD0_JdII" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-23T08:52:15.268Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="bJeiNOYS46oT5FREuzDR" version="18.0.3" type="github" pages="2">
   <diagram id="zKcSNOjYIf93QQ4NGKm3" name="Page-1">
-    <mxGraphModel dx="931" dy="630" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="866" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-1" target="wA-sDUwG3-zoEpdpcE1W-4">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-1" target="wA-sDUwG3-zoEpdpcE1W-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-1" value="&lt;font style=&quot;font-size: 20px&quot;&gt;i386_init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-1" value="&lt;font style=&quot;font-size: 20px&quot;&gt;i386_init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="89" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-4" target="wA-sDUwG3-zoEpdpcE1W-5">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=20;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-4" target="wA-sDUwG3-zoEpdpcE1W-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-4" value="&lt;font style=&quot;font-size: 20px&quot;&gt;env_init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-4" value="&lt;font style=&quot;font-size: 20px&quot;&gt;env_init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="208" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-5">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="289" y="437.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-5" value="&lt;font style=&quot;font-size: 20px&quot;&gt;trap_init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-5" value="&lt;font style=&quot;font-size: 20px&quot;&gt;trap_init&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="314" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-9" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-9" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="360" y="312" width="34" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-10" value="&lt;font style=&quot;font-size: 11px&quot;&gt;填充IDT数组，将处理异常的函数的地址放进对应的IDT条目中，比如cpu检测到发生除零异常，就会调用idt[0]中的函数的地址&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-10" value="&lt;font style=&quot;font-size: 11px&quot;&gt;填充IDT数组，将处理异常的函数的地址放进对应的IDT条目中，比如cpu检测到发生除零异常，就会调用idt[0]中的函数的地址&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="398" y="308" width="230" height="57" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="354" y="204" width="34" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-12" value="&lt;span style=&quot;font-size: 11px&quot;&gt;设置进程的数据结构，进程在JOS中表示为env，env_init将envs数组中所有元素状态设置为ENV_FREE，并用单链表拉成一串表示没有用到的env&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-12" value="&lt;span style=&quot;font-size: 11px&quot;&gt;设置进程的数据结构，进程在JOS中表示为env，env_init将envs数组中所有元素状态设置为ENV_FREE，并用单链表拉成一串表示没有用到的env&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="394" y="202" width="230" height="57" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-15" target="wA-sDUwG3-zoEpdpcE1W-16">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-15" target="wA-sDUwG3-zoEpdpcE1W-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-15" target="wA-sDUwG3-zoEpdpcE1W-18">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-15" target="wA-sDUwG3-zoEpdpcE1W-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-15" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_create&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-15" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_create&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="441" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-16" target="wA-sDUwG3-zoEpdpcE1W-28">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-16" target="wA-sDUwG3-zoEpdpcE1W-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-16" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-16" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="541" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-18">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="918" y="465.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-18" value="&lt;span style=&quot;font-size: 11px&quot;&gt;首先&lt;/span&gt;&lt;font size=&quot;1&quot;&gt;在编译链接kernel的时候，在kern/Makefrag中构建obj/kernel/kernel目标时，会发现KERN_BINARYFILES目标不存在，然后在user/Makefrag中有相应的构建规则，于是构建KERN_BINARYFIES目标，也就是hello等二进制，然后kernel使用自己的kernel.ld静态链接脚本将这些二进制放入到自己的二进制对应的段当中&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-18" value="&lt;span style=&quot;font-size: 11px&quot;&gt;首先&lt;/span&gt;&lt;font size=&quot;1&quot;&gt;在编译链接kernel的时候，在kern/Makefrag中构建obj/kernel/kernel目标时，会发现KERN_BINARYFILES目标不存在，然后在user/Makefrag中有相应的构建规则，于是构建KERN_BINARYFIES目标，也就是hello等二进制，然后kernel使用自己的kernel.ld静态链接脚本将这些二进制放入到自己的二进制对应的段当中&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="427" y="406.25" width="375" height="118.5" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-25" value="&lt;font style=&quot;font-size: 20px&quot;&gt;load_icode&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-25" value="&lt;font style=&quot;font-size: 20px&quot;&gt;load_icode&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="926" y="441" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-26" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-26" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="1044" y="441" width="34" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-27" value="&lt;span style=&quot;font-size: 11px&quot;&gt;链接时候将hello等二进制放到了内核的地址空间上，用户没有访问的权限，load_icode将映射内核的hello等二进制映射到用户空间，使得进程可以执行，并将env的env_tf.tf_eip设置为elf_header-&amp;gt;e_entry&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-27" value="&lt;span style=&quot;font-size: 11px&quot;&gt;链接时候将hello等二进制放到了内核的地址空间上，用户没有访问的权限，load_icode将映射内核的hello等二进制映射到用户空间，使得进程可以执行，并将env的env_tf.tf_eip设置为elf_header-&amp;gt;e_entry&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1082" y="439" width="230" height="122" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-28" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_pop_tf&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-28" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_pop_tf&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="422" y="541" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-30" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-30" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="542" y="539" width="34" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="wA-sDUwG3-zoEpdpcE1W-31" value="&lt;font style=&quot;font-size: 13px&quot;&gt;执行用户态的第一条指令&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wA-sDUwG3-zoEpdpcE1W-31" value="&lt;font style=&quot;font-size: 13px&quot;&gt;执行用户态的第一条指令&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="585" y="539" width="106" height="49" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DsgaNwuiP_pjXZAh4Ah0" name="Page-2">
+    <mxGraphModel dx="866" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-cD225xChm8J0sk1LJDq-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="J8-bNGInOxo5zxUYOFuc-1" target="-cD225xChm8J0sk1LJDq-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J8-bNGInOxo5zxUYOFuc-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;某个trap_handler&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="161" width="206" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-1" target="-cD225xChm8J0sk1LJDq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;_alltraps&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="290" width="206" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-3" target="-cD225xChm8J0sk1LJDq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-3" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;trap&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="419" width="206" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-5" target="-cD225xChm8J0sk1LJDq-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="407" y="161" width="60" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;在trap_init函数中设置了中断向量表idt，其中idt的第i项，表示当发生第i种中断的时候，会从idt[i]中取出相应的中断函数的地址，而这些地址指向了某个trap_handler&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="523" y="112.75" width="257" height="149.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-8" target="-cD225xChm8J0sk1LJDq-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="508" y="561" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-8" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;trap_dispatch&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="419" width="206" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-10" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="536" width="206" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-12" target="-cD225xChm8J0sk1LJDq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="662" y="415" width="60" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="-cD225xChm8J0sk1LJDq-13" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;在trap_dispatch会根据不同的中断号进行不同的处理&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="387.75" width="120" height="107.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
