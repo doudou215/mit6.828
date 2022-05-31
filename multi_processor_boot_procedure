@@ -1,47 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2022-05-30T02:48:23.628Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="QsFYZCITkZGoo8itKCki" version="18.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-31T03:03:03.447Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="JIYx1_Ofj3ylywfo-4La" version="18.1.3" type="github" pages="2">
   <diagram id="cyjd4oOf07BadTjJHVsx" name="Page-1">
+    <mxGraphModel dx="1083" dy="741" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" parent="1" source="hfBrvzHdLTsKj7AiVPFh-1" target="hfBrvzHdLTsKj7AiVPFh-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-1" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;boot_aps&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="340" y="117" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-2" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="515" y="259" width="40" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-3" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;将kern/mpentry.S拷贝到物理内存0x7000处，发送STARTUP中断给每个AP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="511" y="80.25" width="230" height="133.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;strokeWidth=2;direction=south;" parent="1" vertex="1">
+          <mxGeometry x="340" y="85" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-5" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;bootstrap processor&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="297" y="20.25" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" parent="1" source="hfBrvzHdLTsKj7AiVPFh-6" target="hfBrvzHdLTsKj7AiVPFh-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-6" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;mpentry_start&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="293.5" y="260" width="213" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;strokeWidth=2;direction=east;size=0.5;" parent="1" vertex="1">
+          <mxGeometry x="253" y="263.5" width="28.5" height="56.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-9" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;application processor&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="26" y="260" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="471" y="117" width="40" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-11" value="在接收到STARTUP中断后，此时AP还处于实模式，寻址方式为段基址 &amp;lt;&amp;lt; 4 + 段内偏移&lt;br&gt;如 ljmpl&amp;nbsp; &amp;nbsp;$(PROT_MODE_CSEG), $(MPBOOTPHYS(start32))&lt;br&gt;PROT_MODE_CSEG * 16 + MPBOOTPHYS(start32)，启动保护模式后，调用mp_main" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="557" y="223.25" width="466" height="133.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hfBrvzHdLTsKj7AiVPFh-12" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;mp_main&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="293.5" y="400" width="213" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bBIPgLhtdk3YEdbV8_jf" name="Page-2">
     <mxGraphModel dx="866" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="hfBrvzHdLTsKj7AiVPFh-1" target="hfBrvzHdLTsKj7AiVPFh-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-1" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;boot_aps&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="340" y="117" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-2" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="515" y="259" width="40" height="61" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-3" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;将kern/mpentry.S拷贝到物理内存0x7000处，发送STARTUP中断给每个AP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="511" y="80.25" width="230" height="133.5" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;strokeWidth=2;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="340" y="85" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-5" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;bootstrap processor&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="20.25" width="214" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="hfBrvzHdLTsKj7AiVPFh-6" target="hfBrvzHdLTsKj7AiVPFh-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-6" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;mpentry_start&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="293.5" y="260" width="213" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;strokeWidth=2;direction=east;size=0.5;" vertex="1" parent="1">
-          <mxGeometry x="253" y="263.5" width="28.5" height="56.5" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-9" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;application processor&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="26" y="260" width="214" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="471" y="117" width="40" height="61" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-11" value="在接收到STARTUP中断后，此时AP还处于实模式，寻址方式为段基址 &amp;lt;&amp;lt; 4 + 段内偏移&lt;br&gt;如 ljmpl&amp;nbsp; &amp;nbsp;$(PROT_MODE_CSEG), $(MPBOOTPHYS(start32))&lt;br&gt;PROT_MODE_CSEG * 16 + MPBOOTPHYS(start32)，启动保护模式后，调用mp_main" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="557" y="223.25" width="466" height="133.5" as="geometry" />
-        </mxCell>
-        <mxCell id="hfBrvzHdLTsKj7AiVPFh-12" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;mp_main&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="293.5" y="400" width="213" height="60" as="geometry" />
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-1" value="用户态申请调度&lt;br&gt;sys_yield" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="263" y="80" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
