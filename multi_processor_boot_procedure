@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-31T03:18:29.833Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="tnoVQNd5Uxg-ut5EwQp-" version="18.1.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-31T03:29:21.244Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="YEf4UHI-5jXccxfy5Prt" version="18.1.3" type="github" pages="2">
   <diagram id="cyjd4oOf07BadTjJHVsx" name="Page-1">
     <mxGraphModel dx="1083" dy="741" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -129,8 +129,32 @@
         <mxCell id="G66LGJXyQ6BsvE_50YiR-26" value="内核&lt;br&gt;sys_yield" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="863" y="640" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=23;" edge="1" parent="1" source="G66LGJXyQ6BsvE_50YiR-28" target="G66LGJXyQ6BsvE_50YiR-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="G66LGJXyQ6BsvE_50YiR-28" value="内核&lt;br&gt;sched_yield" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1063" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-31" value="&lt;b&gt;不执行&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="256.5" y="711" width="133" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=23;" edge="1" parent="1" source="G66LGJXyQ6BsvE_50YiR-32" target="G66LGJXyQ6BsvE_50YiR-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=23;" edge="1" parent="1" source="G66LGJXyQ6BsvE_50YiR-32" target="G66LGJXyQ6BsvE_50YiR-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-32" value="如果在envs发现ENV_RUNNABLE状态的env则执行env_run，或者thiscpu的env是ENV_RUNNING" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1043.5" y="747" width="159" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-34" value="env_run()" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="983" y="876" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-36" value="sched_halt()" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1129" y="876" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G66LGJXyQ6BsvE_50YiR-38" value="是" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="834" width="42" height="15" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
