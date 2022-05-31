@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T07:08:22.330Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="0fUIQrT_IzO5pP-FXqbh" version="18.0.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-31T03:50:53.423Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="wYaDFOgjGMKjoD_ufduf" version="18.1.3" type="github" pages="2">
   <diagram id="zKcSNOjYIf93QQ4NGKm3" name="Page-1">
     <mxGraphModel dx="866" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="XRdF0nZ9zViqx_LDooN3-1" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="203" y="530" width="502" height="275" as="geometry" />
+        </mxCell>
         <mxCell id="wA-sDUwG3-zoEpdpcE1W-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-1" target="wA-sDUwG3-zoEpdpcE1W-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -42,6 +45,9 @@
         <mxCell id="wA-sDUwG3-zoEpdpcE1W-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" parent="1" source="wA-sDUwG3-zoEpdpcE1W-15" target="wA-sDUwG3-zoEpdpcE1W-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="XRdF0nZ9zViqx_LDooN3-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wA-sDUwG3-zoEpdpcE1W-15" target="XRdF0nZ9zViqx_LDooN3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="wA-sDUwG3-zoEpdpcE1W-15" value="&lt;span style=&quot;font-size: 20px&quot;&gt;env_create&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="441" width="106" height="49" as="geometry" />
         </mxCell>
@@ -77,11 +83,14 @@
         <mxCell id="wA-sDUwG3-zoEpdpcE1W-31" value="&lt;font style=&quot;font-size: 13px&quot;&gt;执行用户态的第一条指令&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="585" y="539" width="106" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="ZCcAMX9trMGym627BYfV-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;direction=north;" vertex="1" parent="1">
+        <mxCell id="ZCcAMX9trMGym627BYfV-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=20;size=0.5;direction=north;" parent="1" vertex="1">
           <mxGeometry x="244.5" y="605" width="89" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="ZCcAMX9trMGym627BYfV-2" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;设置curenv&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCcAMX9trMGym627BYfV-2" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;设置curenv&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" y="641" width="106" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="XRdF0nZ9zViqx_LDooN3-2" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;sched_yield&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="441" width="106" height="49" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -91,59 +100,59 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="-cD225xChm8J0sk1LJDq-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="J8-bNGInOxo5zxUYOFuc-1" target="-cD225xChm8J0sk1LJDq-1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" parent="1" source="J8-bNGInOxo5zxUYOFuc-1" target="-cD225xChm8J0sk1LJDq-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J8-bNGInOxo5zxUYOFuc-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;某个trap_handler&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="J8-bNGInOxo5zxUYOFuc-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;某个trap_handler&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="159" y="161" width="206" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-1" target="-cD225xChm8J0sk1LJDq-3">
+        <mxCell id="-cD225xChm8J0sk1LJDq-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" parent="1" source="-cD225xChm8J0sk1LJDq-1" target="-cD225xChm8J0sk1LJDq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;_alltraps&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;_alltraps&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="159" y="290" width="206" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-3" target="-cD225xChm8J0sk1LJDq-8">
+        <mxCell id="-cD225xChm8J0sk1LJDq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" parent="1" source="-cD225xChm8J0sk1LJDq-3" target="-cD225xChm8J0sk1LJDq-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-3" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;trap&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-3" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;trap&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="159" y="419" width="206" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-5" target="-cD225xChm8J0sk1LJDq-6">
+        <mxCell id="-cD225xChm8J0sk1LJDq-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" parent="1" source="-cD225xChm8J0sk1LJDq-5" target="-cD225xChm8J0sk1LJDq-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=19;" parent="1" vertex="1">
           <mxGeometry x="407" y="161" width="60" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;在trap_init函数中设置了中断向量表idt，其中idt的第i项，表示当发生第i种中断的时候，会从idt[i]中取出相应的中断函数的地址，而这些地址指向了某个trap_handler&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;在trap_init函数中设置了中断向量表idt，其中idt的第i项，表示当发生第i种中断的时候，会从idt[i]中取出相应的中断函数的地址，而这些地址指向了某个trap_handler&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="523" y="112.75" width="257" height="149.5" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-8" target="-cD225xChm8J0sk1LJDq-10">
+        <mxCell id="-cD225xChm8J0sk1LJDq-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" parent="1" source="-cD225xChm8J0sk1LJDq-8" target="-cD225xChm8J0sk1LJDq-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="508" y="561" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-8" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;trap_dispatch&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-8" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;trap_dispatch&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="445" y="419" width="206" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-10" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-10" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="159" y="536" width="206" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="-cD225xChm8J0sk1LJDq-12" target="-cD225xChm8J0sk1LJDq-13">
+        <mxCell id="-cD225xChm8J0sk1LJDq-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" parent="1" source="-cD225xChm8J0sk1LJDq-12" target="-cD225xChm8J0sk1LJDq-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=19;" parent="1" vertex="1">
           <mxGeometry x="662" y="415" width="60" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="-cD225xChm8J0sk1LJDq-13" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;在trap_dispatch会根据不同的中断号进行不同的处理&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" vertex="1" parent="1">
+        <mxCell id="-cD225xChm8J0sk1LJDq-13" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;在trap_dispatch会根据不同的中断号进行不同的处理&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="770" y="387.75" width="120" height="107.5" as="geometry" />
         </mxCell>
-        <mxCell id="7uNmV-4-qTv31g1jK9lU-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=11;direction=north;" vertex="1" parent="1">
+        <mxCell id="7uNmV-4-qTv31g1jK9lU-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=11;direction=north;" parent="1" vertex="1">
           <mxGeometry x="162" y="603" width="194" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="7uNmV-4-qTv31g1jK9lU-2" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;设置curenv为当前的env&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" vertex="1" parent="1">
+        <mxCell id="7uNmV-4-qTv31g1jK9lU-2" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;设置curenv为当前的env&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=19;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="147" y="630" width="255" height="107.5" as="geometry" />
         </mxCell>
       </root>
