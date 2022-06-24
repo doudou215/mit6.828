@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-17T09:44:56.253Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="a4JiaXk7N0LjSCnwx8Rs" version="20.0.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-24T07:58:35.112Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="X393mhFhv1Ua55SjyZUy" version="20.0.2" type="github" pages="2">
   <diagram id="cyjd4oOf07BadTjJHVsx" name="Page-1">
-    <mxGraphModel dx="4056" dy="2247" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4646" dy="2652" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -49,7 +49,7 @@
         <mxCell id="hfBrvzHdLTsKj7AiVPFh-11" value="在接收到STARTUP中断后，此时AP还处于实模式，寻址方式为段基址 &amp;lt;&amp;lt; 4 + 段内偏移&lt;br&gt;如 ljmpl&amp;nbsp; &amp;nbsp;$(PROT_MODE_CSEG), $(MPBOOTPHYS(start32))&lt;br&gt;PROT_MODE_CSEG * 16 + MPBOOTPHYS(start32)，启动保护模式后，调用mp_main" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="557" y="223.25" width="466" height="133.5" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hfBrvzHdLTsKj7AiVPFh-12" target="saU2wgwhiUEGETtg41x1-9">
+        <mxCell id="saU2wgwhiUEGETtg41x1-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hfBrvzHdLTsKj7AiVPFh-12" target="saU2wgwhiUEGETtg41x1-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hfBrvzHdLTsKj7AiVPFh-12" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;mp_main&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
@@ -61,7 +61,7 @@
         <mxCell id="ohctA0l5L8PqFbl6LRk5-1" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;lock_kernel&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="293.5" y="540" width="213" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ohctA0l5L8PqFbl6LRk5-3" target="saU2wgwhiUEGETtg41x1-1">
+        <mxCell id="saU2wgwhiUEGETtg41x1-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ohctA0l5L8PqFbl6LRk5-3" target="saU2wgwhiUEGETtg41x1-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ohctA0l5L8PqFbl6LRk5-3" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;sched_yield&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
@@ -73,7 +73,7 @@
         <mxCell id="6WbF3fHzCZKEabCaLSfs-1" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;lock_kernel&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="297" y="-119.75" width="214" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6WbF3fHzCZKEabCaLSfs-3" target="saU2wgwhiUEGETtg41x1-6">
+        <mxCell id="saU2wgwhiUEGETtg41x1-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6WbF3fHzCZKEabCaLSfs-3" target="saU2wgwhiUEGETtg41x1-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6WbF3fHzCZKEabCaLSfs-3" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;trap_init&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
@@ -115,7 +115,7 @@
         <mxCell id="P9Q8BL2z8lUv4w9fq_6R-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6WbF3fHzCZKEabCaLSfs-22" target="P9Q8BL2z8lUv4w9fq_6R-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6WbF3fHzCZKEabCaLSfs-22" target="saU2wgwhiUEGETtg41x1-1">
+        <mxCell id="saU2wgwhiUEGETtg41x1-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6WbF3fHzCZKEabCaLSfs-22" target="saU2wgwhiUEGETtg41x1-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6WbF3fHzCZKEabCaLSfs-22" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;sched_yield&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
@@ -142,6 +142,9 @@
         <mxCell id="P9Q8BL2z8lUv4w9fq_6R-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="P9Q8BL2z8lUv4w9fq_6R-5" target="P9Q8BL2z8lUv4w9fq_6R-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P9Q8BL2z8lUv4w9fq_6R-5" target="MJeTNjvE_Iqiwf5Mbuep-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="P9Q8BL2z8lUv4w9fq_6R-5" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;sched_yiled&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="-1269" y="117" width="214" height="60" as="geometry" />
         </mxCell>
@@ -166,10 +169,10 @@
         <mxCell id="P9Q8BL2z8lUv4w9fq_6R-15" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;ap cpu等待获取锁&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="564" y="536" width="213" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-1" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="saU2wgwhiUEGETtg41x1-1" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;env_run&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="-276" y="680" width="214" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="saU2wgwhiUEGETtg41x1-6">
+        <mxCell id="saU2wgwhiUEGETtg41x1-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="saU2wgwhiUEGETtg41x1-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="401" y="-123" as="targetPoint" />
             <Array as="points">
@@ -178,10 +181,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-6" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;trap_init_percpu&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="saU2wgwhiUEGETtg41x1-6" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;trap_init_percpu&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="591" y="-259.75" width="214" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="saU2wgwhiUEGETtg41x1-9" target="ohctA0l5L8PqFbl6LRk5-1">
+        <mxCell id="saU2wgwhiUEGETtg41x1-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="saU2wgwhiUEGETtg41x1-9" target="ohctA0l5L8PqFbl6LRk5-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="693" y="490" />
@@ -189,14 +192,23 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="saU2wgwhiUEGETtg41x1-9" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;trap_init_percpu&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="saU2wgwhiUEGETtg41x1-9" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;trap_init_percpu&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="586.5" y="400" width="213" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;direction=north;" vertex="1" parent="1">
+          <mxGeometry x="-1873" y="219" width="537" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-2" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;第二个环境&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-1702" y="263.5" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-3" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;在sched_yield中会调用env_run，实现从第一个环境的页表向第二个环境的页表的转换&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-1315" y="-108.25" width="306" height="141.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="bBIPgLhtdk3YEdbV8_jf" name="Page-2">
-    <mxGraphModel dx="1019" dy="698" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1155" dy="791" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
