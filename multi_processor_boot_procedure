@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-24T07:58:35.112Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="X393mhFhv1Ua55SjyZUy" version="20.0.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-22T00:54:30.491Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="U4FWJYmzalCSj-ts7pjF" version="20.1.1" type="github" pages="3">
   <diagram id="cyjd4oOf07BadTjJHVsx" name="Page-1">
-    <mxGraphModel dx="4646" dy="2652" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6811" dy="4134" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -142,7 +142,7 @@
         <mxCell id="P9Q8BL2z8lUv4w9fq_6R-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="P9Q8BL2z8lUv4w9fq_6R-5" target="P9Q8BL2z8lUv4w9fq_6R-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P9Q8BL2z8lUv4w9fq_6R-5" target="MJeTNjvE_Iqiwf5Mbuep-3">
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="P9Q8BL2z8lUv4w9fq_6R-5" target="MJeTNjvE_Iqiwf5Mbuep-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="P9Q8BL2z8lUv4w9fq_6R-5" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;sched_yiled&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
@@ -195,13 +195,13 @@
         <mxCell id="saU2wgwhiUEGETtg41x1-9" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;trap_init_percpu&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="586.5" y="400" width="213" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;direction=north;" vertex="1" parent="1">
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-1" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=22;strokeWidth=2;direction=north;" parent="1" vertex="1">
           <mxGeometry x="-1873" y="219" width="537" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-2" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;第二个环境&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-2" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;第二个环境&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="-1702" y="263.5" width="214" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-3" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;在sched_yield中会调用env_run，实现从第一个环境的页表向第二个环境的页表的转换&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="MJeTNjvE_Iqiwf5Mbuep-3" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;在sched_yield中会调用env_run，实现从第一个环境的页表向第二个环境的页表的转换&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="-1315" y="-108.25" width="306" height="141.25" as="geometry" />
         </mxCell>
       </root>
@@ -325,6 +325,38 @@
             <mxPoint x="1123" y="829" as="sourcePoint" />
             <mxPoint x="1189" y="876" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mCGr4Qv2211XtuXq5bIl" name="Page-3">
+    <mxGraphModel dx="866" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="126" width="120" height="197" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-2" value="参数1&lt;br&gt;参数2&lt;br&gt;参数....." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="323" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-3" value="返回地址" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="383" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-4" value="old_ebp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="443" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="273" y="126" width="20" height="258" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-6" value="调用函数栈帧" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="144" y="229" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-7" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="273" y="388" width="20" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="ojCOXSlxLAJbjJ5gD1Yf-8" value="被调用函数栈帧" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="151" y="431.5" width="111" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
